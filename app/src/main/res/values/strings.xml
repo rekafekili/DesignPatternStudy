@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DesignPatternStudy</string>
+    <string name="winner">Winner!</string>
 </resources>
