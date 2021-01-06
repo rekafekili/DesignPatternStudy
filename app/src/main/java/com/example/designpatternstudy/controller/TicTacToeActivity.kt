@@ -48,7 +48,7 @@ class TicTacToeActivity : AppCompatActivity() {
         }
     }
 
-    fun onCellClicked(v: View) {
+    fun onCellClick(v: View) {
         val button = v as Button
 
         val tag = button.tag.toString()
@@ -58,10 +58,12 @@ class TicTacToeActivity : AppCompatActivity() {
 
         val playerMoved = model.mark(row, col)
 
-        button.text = playerMoved.toString()
-        if(model.winner != null) {
-            winner_linear.visibility = VISIBLE
-            winner_name_textview.text = playerMoved.name
+        if(playerMoved != null) {
+            button.text = playerMoved.toString()
+            if(model.winner != null) {
+                winner_linear.visibility = VISIBLE
+                winner_name_textview.text = playerMoved.name
+            }
         }
     }
 }

@@ -18,19 +18,21 @@ class Board {
      */
     fun restart() {
         clearCells()
+        winner = null
         currentTurn = Player.X
         state = GameState.IN_PROGRESS
     }
 
     private fun clearCells() {
         for (i in 0 until 3) {
+            cells[i].clear()
             for (j in 0 until 3) {
                 cells[i].add(Cell())
             }
         }
     }
 
-    fun mark(row: Int, col: Int) : Player {
+    fun mark(row: Int, col: Int) : Player? {
         var playerMoved: Player? = null
 
         if(isValid(row, col)) {
@@ -45,7 +47,7 @@ class Board {
             }
         }
 
-        return playerMoved!!
+        return playerMoved
     }
 
     private fun isValid(row: Int, col: Int): Boolean {

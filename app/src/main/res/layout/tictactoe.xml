@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".controller.TicTacToeActivity">
 
     <GridLayout
         android:id="@+id/board_grid"
@@ -17,58 +18,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <TextView
+        <Button
             android:tag="00"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="01"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="02"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="10"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="11"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="12"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="20"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="21"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
 
-        <TextView
+        <Button
             android:tag="22"
             android:onClick="onCellClick"
-            android:background="@drawable/background_gray"
             style="@style/tictactoe_button"/>
     </GridLayout>
 
