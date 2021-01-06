@@ -1,6 +1,6 @@
-package com.example.designpatternstudy.presenter
+package com.example.designpatternstudy.viewmodel
 
-interface Presenter {
+interface ViewModel {
     fun onCreate()
     fun onPause()
     fun onResume()
